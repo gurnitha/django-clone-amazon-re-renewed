@@ -408,3 +408,8 @@
 
         modified:   README.md
         modified:   app/backend/views.py
+
+#### 8.5.32 Adding form to admin-login.html
+
+        modified:   README.md
+        modified:   templates/backend/admin-login.html

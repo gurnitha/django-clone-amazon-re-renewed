@@ -8,5 +8,32 @@
 
 <!-- Content -->
 {% block content %}
-	<h1 style="color:#C07800;">Admin Login</h1>
+	<div>
+		<h1 style="color:#C07800;">Admin Login</h1>
+		<form
+			method=""
+			action="">
+			<div>
+				<label for="email">Username</label>
+				<input 
+					type="text" 
+					name="username"
+					placeholder="username">
+			</div>
+			<div>
+				<label for="email">Passwor</label>
+				<input 
+					type="password" 
+					name="password"
+					placeholder="password">
+			</div>
+
+			<div>
+				<button type="submit">Login</button>
+			</div>
+			
+		</form>
+	</div> 	
 {% endblock content %}
+
+
