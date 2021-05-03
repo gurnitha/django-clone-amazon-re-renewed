@@ -61,3 +61,10 @@
         Successfully installed asgiref-3.3.4 django-3.2 pytz-2021.1 sqlparse-0.4.1
         (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python -m pip install --upgrade pip
         new file:   README.md
+
+### 3. CREATE DJANGO PROJECT AND DJANGO APPS
+
+#### 3.1.8 Create django project called 'config' inside src folder
+
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> django-admin startproject config .
+        new file:   README.md
