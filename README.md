@@ -307,7 +307,7 @@
 
 #### 8.2.29 Create CustomUser model
 
-        # Steps ()
+        # Steps (6)
         1. Define/create CustomUser model
         2. Add choices for 4 type of user: Admin, Staff, Merchant, and Customer
         3. Register it to settings.py
@@ -344,3 +344,46 @@
         new file:   app/backend/migrations/0001_initial.py
         modified:   app/backend/models.py
         modified:   config/settings.py
+
+#### 8.3.30 Create superuser or user as admin
+
+        # Steps ()
+        1. Create superuser
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python manage.py createsuperuser
+        Username: admin
+        Email address: ingafter60@admin.com
+        Password:
+        Password (again):
+        The password is too similar to the username.
+        This password is too short. It must contain at least 8 characters.
+        This password is too common.
+        Bypass password validation and create user anyway? [y/N]: y
+        Superuser created successfully.
+        2. Check the result
+
+        mysql> DESC backend_customuser;
+        +--------------+--------------+------+-----+---------+----------------+
+        | Field        | Type         | Null | Key | Default | Extra          |
+        +--------------+--------------+------+-----+---------+----------------+
+        | id           | bigint(20)   | NO   | PRI | NULL    | auto_increment |
+        | password     | varchar(128) | NO   |     | NULL    |                |
+        | last_login   | datetime(6)  | YES  |     | NULL    |                |
+        | is_superuser | tinyint(1)   | NO   |     | NULL    |                |
+        | username     | varchar(150) | NO   | UNI | NULL    |                |
+        | first_name   | varchar(150) | NO   |     | NULL    |                |
+        | last_name    | varchar(150) | NO   |     | NULL    |                |
+        | email        | varchar(254) | NO   |     | NULL    |                |
+        | is_staff     | tinyint(1)   | NO   |     | NULL    |                |
+        | is_active    | tinyint(1)   | NO   |     | NULL    |                |
+        | date_joined  | datetime(6)  | NO   |     | NULL    |                |
+        | user_type    | varchar(225) | NO   |     | NULL    |                |<-- user_type was added
+        +--------------+--------------+------+-----+---------+----------------+
+        12 rows in set (0.03 sec)
+
+        mysql> SELECT username, email from  backend_customuser;
+        +----------+------------------------+
+        | username | email                  |
+        +----------+------------------------+
+        | admin    | ingafter60@outlook.com |
+        +----------+-------------------------
+        modified:   README.md
