@@ -421,3 +421,18 @@
         modified:   templates/admin-base.html
         new file:   templates/backend/admin-login-process.html
         modified:   templates/backend/admin-login.html
+
+#### 8.7.34 User logout
+
+        # Steps ()
+        1. Define adminLogoutProcess
+        2. request logout
+        3. message success
+        4. redirect ot admin_login
+        5. import adminLogoutProcess and define its path
+        6. add logout nav link
+
+        modified:   README.md
+        modified:   app/backend/views.py
+        modified:   config/urls.py
+        modified:   templates/admin-base.html

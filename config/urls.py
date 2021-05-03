@@ -25,7 +25,8 @@ from app.main.views import(
 from app.backend.views import(
     adminHome,
     adminLogin,
-    adminLoginProcess)
+    adminLoginProcess,
+    adminLogoutProcess)
 
 urlpatterns = [
     
@@ -38,4 +39,5 @@ urlpatterns = [
     path('admin/home', adminHome, name='admin_home'),
     path('admin/login', adminLogin, name='admin_login'),
     path('admin/login-process', adminLoginProcess, name='admin_login_process'),
+    path('admin/logout-process', adminLogoutProcess, name='admin_logout_process'),
 ]
