@@ -436,3 +436,10 @@
         modified:   app/backend/views.py
         modified:   config/urls.py
         modified:   templates/admin-base.html
+
+#### 8.8.35 Limiting the access to admin dashboard, only logged in user could access it
+
+        modified:   README.md
+        modified:   app/backend/__pycache__/views.cpython-39.pyc
+        modified:   app/backend/views.py
+        modified:   config/__pycache__/urls.cpython-39.pyc

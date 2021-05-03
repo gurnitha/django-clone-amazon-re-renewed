@@ -4,10 +4,14 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+'''import login_required module to add conditionl to user login'''
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
 # Admi home
+'''Only loggeg in user can access the admin dashboard'''
+@login_required(login_url='/admin/login')
 def adminHome(request):
 	return render(request, 'backend/admin-home.html')
 
