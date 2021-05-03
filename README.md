@@ -241,3 +241,10 @@
         modified:   templates/front-base.html
         modified:   templates/main/front-about.html
         modified:   templates/main/front-home.html
+
+#### 6.5.22 Styling - Adding simple style Home and About pages
+
+        modified:   README.md
+        modified:   templates/front-base.html
+        modified:   templates/main/front-about.html
+        modified:   templates/main/front-home.html
