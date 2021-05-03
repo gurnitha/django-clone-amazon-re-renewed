@@ -261,3 +261,8 @@
         modified:   config/urls.py
         new file:   templates/backend/admin-home.html
         new file:   templates/backend/admin-login.html
+
+#### 7.2.24 Linking the frontend and backend pages
+
+        modified:   README.md
+        modified:   templates/main/shared/front-navbar.html

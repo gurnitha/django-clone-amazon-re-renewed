@@ -1,6 +1,10 @@
 	<nav>
-		<ul>
+		<ul><h4>Home menu</h4>
 			<li><a href="{% url 'front_home' %}">Front Home</a></li>
 			<li><a href="{% url 'front_about' %}">Front About</a></li>
+		</ul><br>
+		<ul><h4>Admin menu</h4>
+			<li><a href="{% url 'admin_login' %}">Login</a></li>
+			<li><a href="{% url 'admin_home' %}">Admin home</a></li>
 		</ul>
 	</nav>
