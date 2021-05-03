@@ -17,3 +17,7 @@
         git branch -M main
         git push -u origin main
         new file:   README.md
+
+#### 1.3.3 Pushing project's files to github
+
+        new file:   README.md
