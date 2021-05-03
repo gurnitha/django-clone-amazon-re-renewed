@@ -275,3 +275,9 @@
         modified:   templates/backend/admin-home.html
         modified:   templates/backend/admin-login.html
 
+#### 7.4.26 Making page haed title dynamic
+
+        modified:   README.md
+        modified:   templates/admin-base.html
+        modified:   templates/backend/admin-home.html
+        modified:   templates/backend/admin-login.html
