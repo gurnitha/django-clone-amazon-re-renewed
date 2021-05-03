@@ -1,16 +1,7 @@
-<!-- templates/main/front-home -->
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Front Home</title>
-</head>
-<body>
-	<nav>
-		<ul>
-			<li><a href="{% url 'front_home' %}">Front Home</a></li>
-			<li><a href="{% url 'front_about' %}">Front About</a></li>
-		</ul>
-	</nav>
+<!-- templates/main/front-home.html -->
+{% extends "../front-base.html" %}
+
+<!-- Content -->
+{% block content %}
 	<h1>Front Home</h1>
-</body>
-</html>
+{% endblock content %}

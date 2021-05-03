@@ -223,3 +223,14 @@
         modified:   README.md
         modified:   templates/main/front-about.html
         modified:   templates/main/front-home.html
+
+#### 6.3.20 Modify the pages using template in heritance
+
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> mkdir .\templates\main\shared
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> touch .\templates\main\shared\front-navbar.html
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> touch .\templates\front-base.html
+        modified:   README.md
+        new file:   templates/front-base.html
+        modified:   templates/main/front-about.html
+        modified:   templates/main/front-home.html
+        new file:   templates/main/shared/front-navbar.html
