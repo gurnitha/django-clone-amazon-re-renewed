@@ -281,3 +281,26 @@
         modified:   templates/admin-base.html
         modified:   templates/backend/admin-home.html
         modified:   templates/backend/admin-login.html
+
+#### 7.5.27 Styling - Adding simple style Home and About pages
+
+        modified:   README.md
+        modified:   templates/admin-base.html
+        modified:   templates/backend/admin-home.html
+        modified:   templates/backend/admin-login.html
+
+### 8. CUSTOMUSER - LOGIN AND LOGOUT USING CUSTOMUSER MODEL
+
+#### 8.1.28 Creating CustomUser model
+
+        # Steps (2)
+        1. Delete the existing database
+        mysql> DROP DATABASE  django_clone_amazon_re_renewed;
+        2. Create a new database (can be the same name as it was)
+        mysql> CREATE  DATABASE  django_clone_amazon_re_renewed;
+        mysql> USE  django_clone_amazon_re_renewed;
+
+        modified:   README.md
+        modified:   templates/admin-base.html
+        modified:   templates/backend/admin-home.html
+        modified:   templates/backend/admin-login.html
