@@ -168,3 +168,32 @@
         This password is too common.
         Bypass password validation and create user anyway? [y/N]: y
         modified:   README.md
+
+#### 5.3.16 Checking the newly created superuser in db auth_user table
+
+        mysql> DESC auth_user;
+        +--------------+--------------+------+-----+---------+----------------+
+        | Field        | Type         | Null | Key | Default | Extra          |
+        +--------------+--------------+------+-----+---------+----------------+
+        | id           | int(11)      | NO   | PRI | NULL    | auto_increment |
+        | password     | varchar(128) | NO   |     | NULL    |                |
+        | last_login   | datetime(6)  | YES  |     | NULL    |                |
+        | is_superuser | tinyint(1)   | NO   |     | NULL    |                |
+        | username     | varchar(150) | NO   | UNI | NULL    |                |
+        | first_name   | varchar(150) | NO   |     | NULL    |                |
+        | last_name    | varchar(150) | NO   |     | NULL    |                |
+        | email        | varchar(254) | NO   |     | NULL    |                |
+        | is_staff     | tinyint(1)   | NO   |     | NULL    |                |
+        | is_active    | tinyint(1)   | NO   |     | NULL    |                |
+        | date_joined  | datetime(6)  | NO   |     | NULL    |                |
+        +--------------+--------------+------+-----+---------+----------------+
+        11 rows in set (0.05 sec)
+
+        mysql> SELECT username, email FROM auth_user;
+        +----------+------------------------+
+        | username | email                  |
+        +----------+------------------------+
+        | admin    | ingafter60@admin.com   |
+        +----------+------------------------+
+        1 row in set (0.00 sec)
+        modified:   README.md
