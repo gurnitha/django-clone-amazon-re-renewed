@@ -12,6 +12,10 @@
 	<nav>
 		<ul><li><a href="{% url 'front_home' %}">Front Home</a></li></ul>
 	</nav>
+	<p>
+		<span style="color:#269186">User logged in:</span> 
+		<span style="font-size:20px; color:#A57800">{{request.user.username}}</span>
+	</p>
 	<!-- Content -->
 	{% block content %}
 	{% endblock content %}

@@ -413,3 +413,11 @@
 
         modified:   README.md
         modified:   templates/backend/admin-login.html
+
+#### 8.6.33 Authenticate user login
+
+        modified:   README.md
+        modified:   config/urls.py
+        modified:   templates/admin-base.html
+        new file:   templates/backend/admin-login-process.html
+        modified:   templates/backend/admin-login.html

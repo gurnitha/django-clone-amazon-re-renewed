@@ -10,9 +10,11 @@
 {% block content %}
 	<div>
 		<h1 style="color:#C07800;">Admin Login</h1>
+		
 		<form
-			method=""
-			action="">
+			method="post"
+			action="{% url 'admin_login_process' %}">
+			{% csrf_token %}
 			<div>
 				<label for="email">Username</label>
 				<input 

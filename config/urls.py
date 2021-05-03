@@ -24,7 +24,8 @@ from app.main.views import(
 # Import views from backend app
 from app.backend.views import(
     adminHome,
-    adminLogin)
+    adminLogin,
+    adminLoginProcess)
 
 urlpatterns = [
     
@@ -36,4 +37,5 @@ urlpatterns = [
     # path('admin/', admin.site.urls),
     path('admin/home', adminHome, name='admin_home'),
     path('admin/login', adminLogin, name='admin_login'),
+    path('admin/login-process', adminLoginProcess, name='admin_login_process'),
 ]
