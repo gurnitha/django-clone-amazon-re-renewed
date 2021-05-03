@@ -28,3 +28,21 @@
 
         PASS - I have intalled python 3.9 in my computer
         new file:   README.md
+
+#### 2.2.5 Install Django
+
+        PASS - I have installed django v3.2 in my computer
+
+        # Checking installed django version
+        PS E:\2021\DJANGO\WINDOWS\clone-amazon-ytb-supercoders\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python
+        ...
+        >>>
+        >>> import django
+        >>> django.VERSION
+        (3, 2, 0, 'final', 0)
+        >>> django.get_version()
+        '3.2'
+        >>> exit()
+        PS E:\2021\DJANGO\WINDOWS\clone-amazon-ytb-supercoders\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python -m django --version
+        3.2
+        new file:   README.md
