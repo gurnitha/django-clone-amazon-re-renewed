@@ -52,3 +52,12 @@
         PS E:\2021\DJANGO\WINDOWS\clone-amazon-ytb-supercoders\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python -m venv venv3932
         modified:   .gitignore
         modified:   README.md
+
+#### 2.4.7 Installing Django v3.2
+
+        PS E:\2021\DJANGO\WINDOWS\clone-amazon-ytb-supercoders\DJANGO-CLONE-AMAZON-RE-RENEWED\src> .\venv3932\scripts\activate
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python -m pip install django==3.2
+        ...
+        Successfully installed asgiref-3.3.4 django-3.2 pytz-2021.1 sqlparse-0.4.1
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python -m pip install --upgrade pip
+        new file:   README.md
