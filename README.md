@@ -217,3 +217,9 @@
         modified:   config/urls.py
         new file:   templates/main/front-about.html
         new file:   templates/main/front-home.html
+
+#### 6.2.19 Linking the Home and About pages
+
+        modified:   README.md
+        modified:   templates/main/front-about.html
+        modified:   templates/main/front-home.html
