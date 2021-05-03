@@ -155,3 +155,16 @@
         10 rows in set (0.00 sec)
 
         modified:   README.md
+
+#### 5.2.15 Create superuser
+
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python manage.py createsuperuser
+        Username (leave blank to use '62812'): admin
+        Email address: ingafter60@admin.com
+        Password:
+        Password (again):
+        The password is too similar to the username.
+        This password is too short. It must contain at least 8 characters.
+        This password is too common.
+        Bypass password validation and create user anyway? [y/N]: y
+        modified:   README.md
