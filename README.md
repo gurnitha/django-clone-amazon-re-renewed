@@ -122,3 +122,36 @@
         Remember the db creadentials sequance (NAME, USER, PASSWORD, HOST, PORT)
         modified:   README.md
         modified:   config/settings.py
+
+### 5. LOGIN AND LOGOUT USING DEFAULT USER MODEL
+
+#### 5.1.14 Create models/tables
+
+        # Use db and check tables
+        mysql> USE django_clone_amazon_re_renewed;
+        Database changed
+        mysql> SHOW TABLES;
+
+        # Run migration to create tables
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python manage.py makemigrations
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python manage.py migrate
+
+        # Check tables: 10 new tables created
+        mysql> SHOW TABLES;
+        +------------------------------------------+
+        | Tables_in_django_clone_amazon_re_renewed |
+        +------------------------------------------+
+        | auth_group                               |
+        | auth_group_permissions                   |
+        | auth_permission                          |
+        | auth_user                                |
+        | auth_user_groups                         |
+        | auth_user_user_permissions               |
+        | django_admin_log                         |
+        | django_content_type                      |
+        | django_migrations                        |
+        | django_session                           |
+        +------------------------------------------+
+        10 rows in set (0.00 sec)
+
+        modified:   README.md
