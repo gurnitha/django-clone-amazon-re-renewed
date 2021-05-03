@@ -304,3 +304,43 @@
         modified:   templates/admin-base.html
         modified:   templates/backend/admin-home.html
         modified:   templates/backend/admin-login.html
+
+#### 8.2.29 Create CustomUser model
+
+        # Steps ()
+        1. Define/create CustomUser model
+        2. Add choices for 4 type of user: Admin, Staff, Merchant, and Customer
+        3. Register it to settings.py
+        4. Run server
+        >> ValueError: Dependency on app with no migrations: backend
+        5. Run migrations
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python manage.py makemigrations
+        ...
+        app\backend\migrations\0001_initial.py
+        - Create model CustomUser
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python manage.py migrate
+        6. Check the result
+
+        mysql> USE  django_clone_amazon_re_renewed;
+        Database changed
+        mysql> SHOW TABLES;
+        +------------------------------------------+
+        | Tables_in_django_clone_amazon_re_renewed |
+        +------------------------------------------+
+        | auth_group                               |
+        | auth_group_permissions                   |
+        | auth_permission                          |
+        | backend_customuser                       |<-- new
+        | backend_customuser_groups                |<-- new
+        | backend_customuser_user_permissions      |<-- new
+        | django_admin_log                         |
+        | django_content_type                      |
+        | django_migrations                        |
+        | django_session                           |
+        +------------------------------------------+
+        10 rows in set (0.00 sec)
+
+        modified:   README.md
+        new file:   app/backend/migrations/0001_initial.py
+        modified:   app/backend/models.py
+        modified:   config/settings.py
