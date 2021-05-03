@@ -74,3 +74,9 @@
         (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> mkdir app/main
         (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python manage.py startapp main app/main
         new file:   README.md
+
+#### 3.3.10 Create django app called 'backend' inside 'app' folder
+
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> mkdir app/backend
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python manage.py startapp backend app/backend
+        new file:   README.md
