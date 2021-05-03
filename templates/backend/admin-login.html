@@ -30,6 +30,29 @@
 					placeholder="password">
 			</div>
 
+			<!-- 
+				User messages: 
+				for Login Error, and Logout Success -->
+			{% if messages %}
+			<div class="form-group">
+				{% for message in messages %}
+					<!-- Login error -->
+					{% if message.tags == 'error' %}
+						<div class="alert alert-danger">
+							<p style="color:red">{{message}}</p>
+						</div>
+					{% endif %}
+					<!-- Logout success -->
+					{% if message.tags == 'success' %}
+						<div class="alert alert-success">
+							<p style="color:blue">{{message}}</p>
+						</div>
+					{% endif %}
+				{% endfor %}
+			</div>
+			{% endif %}
+			<!-- End User messages -->
+
 			<div>
 				<button type="submit">Login</button>
 			</div>

@@ -8,5 +8,23 @@
 
 <!-- Content -->
 {% block content %}
+	<!-- 
+		User messages: 
+		for Login Success -->
+	{% if messages %}
+	<div class="form-group">
+		{% for message in messages %}
+			<!-- Login success -->
+			{% if message.tags == 'success' %}
+				<div class="alert alert-success">
+					<p style="color:blue">{{message}}</p>
+				</div>
+			{% endif %}
+		{% endfor %}
+	</div>
+	{% endif %}
+	<!-- End User messages -->
+
 	<h1 style="color:#268BDA;">Admin Home</h1>
+	
 {% endblock content %}

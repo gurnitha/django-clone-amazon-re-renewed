@@ -440,6 +440,12 @@
 #### 8.8.35 Limiting the access to admin dashboard, only logged in user could access it
 
         modified:   README.md
+        modified:   app/backend/views.py
+
+#### 8.9.36 Alert Messages - Logged in success, Logged in error, Logged out success
+
+        modified:   README.md
         modified:   app/backend/__pycache__/views.cpython-39.pyc
         modified:   app/backend/views.py
-        modified:   config/__pycache__/urls.cpython-39.pyc
+        modified:   templates/backend/admin-home.html
+        modified:   templates/backend/admin-login.html

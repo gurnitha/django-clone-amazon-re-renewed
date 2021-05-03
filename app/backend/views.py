@@ -34,6 +34,7 @@ def adminLoginProcess(request):
 	# If user exist
 	if user is not None:
 		login(request=request, user=user)
+		messages.success(request, 'Logged in successfully!')
 		return HttpResponseRedirect(reverse('admin_home'))
 	# If user not exist
 	else:
