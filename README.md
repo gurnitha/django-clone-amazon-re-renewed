@@ -80,3 +80,15 @@
         (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> mkdir app/backend
         (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python manage.py startapp backend app/backend
         new file:   README.md
+
+#### 3.4.11 Install main and backend apps to project root, checking and testing
+
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python manage.py check
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python manage.py runserver
+        ..
+        Starting development server at http://127.0.0.1:8000/
+
+        modified:   app/backend/apps.py
+        modified:   app/main/apps.py
+        modified:   config/settings.py
+        new file:   db.sqlite3
