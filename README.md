@@ -9,3 +9,11 @@
         PS E:\2021\DJANGO\WINDOWS\clone-amazon-ytb-supercoders\DJANGO-CLONE-AMAZON-RE-RENEWED\src> touch .gitignore README.md
         new file:   .gitignore
         new file:   README.md
+
+#### 1.2.2 Create a new remote repository (github)
+
+        https://github.com/gurnitha/django-clone-amazon-re-renewed
+        git remote add origin git@github.com:gurnitha/django-clone-amazon-re-renewed.git
+        git branch -M main
+        git push -u origin main
+        new file:   README.md
