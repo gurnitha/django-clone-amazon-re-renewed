@@ -234,3 +234,10 @@
         modified:   templates/main/front-about.html
         modified:   templates/main/front-home.html
         new file:   templates/main/shared/front-navbar.html
+
+#### 6.4.21 Making page haed title dynamic
+
+        modified:   README.md
+        modified:   templates/front-base.html
+        modified:   templates/main/front-about.html
+        modified:   templates/main/front-home.html

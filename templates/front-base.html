@@ -2,7 +2,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Front Home</title>
+	<title>
+	{% block head_title %}
+	    {{block.cuper}}
+	{% endblock head_title %} | Clone Amazon
+	</title>
 </head>
 <body>
 	<!-- Nabbar -->
