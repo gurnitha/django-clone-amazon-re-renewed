@@ -21,3 +21,10 @@
 #### 1.3.3 Pushing project's files to github
 
         new file:   README.md
+
+### 2. BASIC SETUP
+
+#### 2.1.4 Install Python
+
+        PASS - I have intalled python 3.9 in my computer
+        new file:   README.md
