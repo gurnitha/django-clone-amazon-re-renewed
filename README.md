@@ -266,3 +266,12 @@
 
         modified:   README.md
         modified:   templates/main/shared/front-navbar.html
+
+#### 7.3.25 Modify the pages using template in heritance
+
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> touch .\templates\admin-base.html
+        modified:   README.md
+        new file:   templates/admin-base.html
+        modified:   templates/backend/admin-home.html
+        modified:   templates/backend/admin-login.html
+
