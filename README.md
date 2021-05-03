@@ -46,3 +46,9 @@
         PS E:\2021\DJANGO\WINDOWS\clone-amazon-ytb-supercoders\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python -m django --version
         3.2
         new file:   README.md
+
+#### 2.3.6 Create virtual environment
+
+        PS E:\2021\DJANGO\WINDOWS\clone-amazon-ytb-supercoders\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python -m venv venv3932
+        modified:   .gitignore
+        modified:   README.md
