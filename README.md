@@ -197,3 +197,9 @@
         +----------+------------------------+
         1 row in set (0.00 sec)
         modified:   README.md
+
+#### 5.4.17 Run the server, login and logout
+
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python manage.py createsuperuser
+        # Login and logout using the deafult User model DONE:)
+        modified:   README.md
