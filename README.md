@@ -387,3 +387,24 @@
         | admin    | ingafter60@outlook.com |
         +----------+-------------------------
         modified:   README.md
+
+#### 8.4.31 Define views User login process with authentication
+
+        # Steps ()
+        1. Import authenticate, login, logout from django contrib auth
+        2. Import messages django contrib
+        3. Import reverse from django urls
+        4. Import HttpResponseRedirect from django http
+        5. Create adminLoginProcess method
+        5.1 Get input from the login form
+        5.2 Authenticate user creadentials
+        5.3 Check if user exist in the db
+            -use login method with request=request, user=user parameters
+            -display success message
+            -redirect to admin_home
+        5.4 Check if user does not exist in the db
+            -display error message
+            -redirent to admin_login
+
+        modified:   README.md
+        modified:   app/backend/views.py
