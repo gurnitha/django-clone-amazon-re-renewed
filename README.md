@@ -203,3 +203,17 @@
         (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python manage.py createsuperuser
         # Login and logout using the deafult User model DONE:)
         modified:   README.md
+
+### 6. CREATING HOME PAGE FRONTEND
+
+#### 6.1.18 Create Home and About pages with views, templates and url path
+
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> mkdir templates/main
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src>  touch templates/main/front-home.html
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src>  touch templates/main/front-about.html
+        modified:   README.md
+        modified:   app/main/views.py
+        modified:   config/settings.py
+        modified:   config/urls.py
+        new file:   templates/main/front-about.html
+        new file:   templates/main/front-home.html

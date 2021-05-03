@@ -16,6 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+# Import views from main app
+from app.main.views import(
+	frontHome,
+	frontAbout)
+
 urlpatterns = [
+    
+	# FRONTEND PATHS
+	path('', frontHome, name='front_home'),
+	path('about/', frontAbout, name='front_about'),
+    
+	# BACKEND PATHS
     path('admin/', admin.site.urls),
 ]
