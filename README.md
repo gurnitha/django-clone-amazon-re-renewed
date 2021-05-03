@@ -102,3 +102,23 @@
         mysql> CREATE DATABASE django_clone_amazon_re_renewed;
         Query OK, 1 row affected (0.07 sec)
         new file:   README.md
+
+#### 4.2.13 Connecting the project with the database
+
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> python -m pip install mysqlclient
+        ..
+        Successfully installed mysqlclient-2.0.3
+        DATABASES = {
+                'default': {
+                        'ENGINE': 'django.db.backends.mysql',
+                        'NAME': 'this_dbname_modified',
+                        'USER': 'root',
+                        'PASSWORD': '',
+                        'HOST': 'localhost',
+                        'PORT': 3306
+                }
+        }
+        NOTE:
+        Remember the db creadentials sequance (NAME, USER, PASSWORD, HOST, PORT)
+        modified:   README.md
+        modified:   config/settings.py
