@@ -92,3 +92,13 @@
         modified:   app/main/apps.py
         modified:   config/settings.py
         new file:   db.sqlite3
+
+### 4. DATABASE - USING MYSQL FOR THE DATABASE
+
+#### 4.1.12 Create database
+
+        PS E:\2021\DJANGO\WINDOWS\clone-amazon-ytb-supercoders> mysql -u root
+        mysql>
+        mysql> CREATE DATABASE django_clone_amazon_re_renewed;
+        Query OK, 1 row affected (0.07 sec)
+        new file:   README.md
