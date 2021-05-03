@@ -21,6 +21,11 @@ from app.main.views import(
 	frontHome,
 	frontAbout)
 
+# Import views from backend app
+from app.backend.views import(
+    adminHome,
+    adminLogin)
+
 urlpatterns = [
     
 	# FRONTEND PATHS
@@ -28,5 +33,7 @@ urlpatterns = [
 	path('about/', frontAbout, name='front_about'),
     
 	# BACKEND PATHS
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
+    path('admin/home', adminHome, name='admin_home'),
+    path('admin/login', adminLogin, name='admin_login'),
 ]

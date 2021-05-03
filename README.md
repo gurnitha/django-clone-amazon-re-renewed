@@ -248,3 +248,16 @@
         modified:   templates/front-base.html
         modified:   templates/main/front-about.html
         modified:   templates/main/front-home.html
+
+### 7. BACKEND - CREATING HOME AND LOGIN PAGES
+
+#### 7.1.23 Create Home and Login pages with views, templates and url path
+
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> mkdir .\templates\backend
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> touch .\templates\backend\admin-login.html
+        (venv3932) ...\DJANGO-CLONE-AMAZON-RE-RENEWED\src> touch .\templates\backend\admin-home.html
+        modified:   README.md
+        modified:   app/backend/views.py
+        modified:   config/urls.py
+        new file:   templates/backend/admin-home.html
+        new file:   templates/backend/admin-login.html
